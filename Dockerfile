@@ -27,6 +27,13 @@ RUN pip install https://github.com/ipython-contrib/jupyter_contrib_nbextensions/
 
 RUN git clone git://github.com/alan-turing-institute/sktime.git && \
     cd sktime && \
-    pip install --editable . 
+    pip install --editable . && \
+    cd ..
+    
+RUN git clone https://github.com/sktime/sktime-dl.git && \
+    cd sktime-dl && \
+    pip install --editable . && \
+    cd ..
+
 
 
