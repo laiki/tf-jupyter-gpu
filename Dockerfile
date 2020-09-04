@@ -35,6 +35,7 @@ RUN git clone https://github.com/sktime/sktime-dl.git && \
     pip install --editable . && \
     cd ..
 
-RUN pip install pmdarima
+RUN pip install pmdarima autokeras
+
 
 
